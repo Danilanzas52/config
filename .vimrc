@@ -9,7 +9,6 @@ set t_Co=256
 
 
 
-
 " Vim spellchercker 
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
@@ -49,11 +48,19 @@ xnoremap <leader>sp xi()<Esc>P
 xnoremap <leader>sb xi[]<Esc>P
 xnoremap <leader>sk xi{}<Esc>P
 
+
+
+
 syntax on
-set tabstop=4
 set softtabstop=4
 set expandtab
 set shiftwidth=4
+" Makefile support (use real tabs intead of spaces)
+autocmd FileType make setlocal noexpandtab  shiftwidth=4 softtabstop=0
+
+
+
+
 set ai
 set number
 set backspace=indent,eol,start

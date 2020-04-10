@@ -29,7 +29,12 @@ alias servedir='nohup python -m SimpleHTTPServer 50000 >>/dev/null & $BROWSER ht
 
 #Export CUDA (nvcc config file)
 export PATH=$PATH:/usr/local/cuda-10.2/bin
+
+#Flutter /opt
 export PATH=$PATH:/opt/flutter/bin
+
+#LASTOOLS
 export PATH=$PATH:/opt/LAStools/bin
 
+#PDAL
 export PDAL_DRIVER_PATH="$PDAL_DRIVER_PATH:/usr/local/lib"
