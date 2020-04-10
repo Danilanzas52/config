@@ -13,8 +13,7 @@ pip install powerline-status
 cd /tmp && git clone https://github.com/powerline/fonts.git && cd fonts && sh ./install.sh
 
 #Install vim 
-cd /tmp && git clone https://github.com/vim/vim.git && cd vim &&./configure --enable-pythoninterp --prefix=/usr && make -j4 && make install
-
+apt install neovim
 #Install python virtualenv
 apt install virtualenv
 
