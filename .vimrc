@@ -1,7 +1,8 @@
+" Vim powerline
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 " Always show statusline
 set laststatus=2
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+" Use 256 colors (Use this setting only if your terminal supports 256 colors)
 set t_Co=256
 
 
@@ -9,20 +10,13 @@ set t_Co=256
 
 
 
-
-
-
-
-
-
-
-
-
-
+" Vim spellchercker 
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
 map <Space> <Leader>
 :imap jj <Esc>
 
+" Vim tab movement
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -49,8 +43,11 @@ nmap <silent> <Leader>b  :exe "tabn " . g:Lasttab<cr>
 
 
 
+" Surround selected
 
-
+xnoremap <leader>sp xi()<Esc>P
+xnoremap <leader>sb xi[]<Esc>P
+xnoremap <leader>sk xi{}<Esc>P
 
 syntax on
 set tabstop=4
