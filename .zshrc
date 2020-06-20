@@ -1,4 +1,6 @@
 #ZSH_CONFIG--------------------------------
+eval `dircolors ~/.config/dir_colors/dircolors`
+
 export ZSH="/home/smooth/.oh-my-zsh"
 ZSH_THEME="agnoster"
 CASE_SENSITIVE="false"
@@ -33,3 +35,5 @@ export PATH=$PATH:/opt/flutter/bin
 export PATH=$PATH:/opt/LAStools/bin
 
 export PDAL_DRIVER_PATH="$PDAL_DRIVER_PATH:/usr/local/lib"
+export PATH=$PATH:/opt
+export PATH=$PATH:/opt/graphical_linux/dwmblocks/status_bar_scripts

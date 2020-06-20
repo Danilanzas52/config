@@ -4,6 +4,7 @@ update:
 	$(CP) ~/.vimrc . 
 	$(CP) ~/.zshrc . 
 	$(CP) ~/.tmux.conf . 
+	$(CP) -r ~/.config/dir_colors/ . 
 	$(GIT) add .
 	$(GIT) commit 
 	$(GIT) push
@@ -11,7 +12,8 @@ update:
 
 install:
 	$(GIT) pull 
-	$(CP) . ~/.vimrc 
-	$(CP) . ~/.zshrc 
-	$(CP) . ~/.tmux.conf 
+	$(CP) .vimrc ~/.vimrc 
+	$(CP) .zshrc ~/.zshrc 
+	$(CP) .tmux.conf ~/.tmux.conf 
+	$(CP) -r dir_colors/ ~/.config/  
 	
